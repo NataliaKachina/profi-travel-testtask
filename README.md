@@ -22,6 +22,7 @@ To start the development server
 npm start
 ```
 Прод.сборка пока собирается криво, не успела разобраться с конфигом webpack для нее. Пока работает только dev сборка.
+
 To build for production
 
 ```sh
