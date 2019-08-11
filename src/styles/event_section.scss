@@ -1,0 +1,125 @@
+.section {
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    .section__time {
+        color: $bluecolor;
+        font-size: 28px;
+        margin-right: 40px;
+        margin-bottom: 25px;
+        line-height: 1.2em;
+        sup {
+            padding-left: 10px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .section__time {
+            font-size: 36px;
+        }
+    }
+    .section__time__old {
+        font-size: 36px;
+        color: rgb(204, 204, 204);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    .section__registration {
+        .action-button + p {
+            margin-top: 10px;
+        }
+        p {
+            font-size: 11px;
+            color: rgb(153, 153, 153);
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+    .section__over-the-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        .section__event-title {
+            margin: 0;
+            line-height: 1.5;
+        }
+        .event-details__link {
+            cursor: pointer;
+            text-decoration: none;
+            width: 115px;
+            margin-top: 15px;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 2px;
+            background-color: $lightgraycolor;
+            color: rgb(153, 153, 153);
+            &._active {
+                display: block;
+                color: $bluecolor;
+            }
+        }
+        .event-details__list {
+            margin: 0 -30px;
+            display: none;
+            padding: 20px 40px 20px 15px;
+            line-height: 1.5;
+            background-color: $lightgraycolor;
+        }
+        @media (min-width: 768px) {
+            .event-details__list {
+                margin: 0;
+            }
+        }
+        .section__registration,
+        .section__play {
+            display: none;
+        }
+        @media (min-width: 1200px) {
+            .section__registration,
+            .section__play {
+                display: block;
+            }
+        }
+
+    }
+
+    .section__under-the-line {
+        hr {
+            background-color: $bluecolor;
+            height: 1px;
+        }
+        .experts + .section__registration,
+        .experts + .section__play {
+            margin-top: 50px;
+        }
+        .section__registration,
+        .section__play {
+            display: flex;
+            justify-content: space-between;
+            p {
+                text-align: left;
+                width: 95px;
+                margin-left: 15px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .section__registration,
+            .section__play {
+                display: none;
+            }
+        }
+        .expert__name {
+            line-height: 1.2;
+            text-align: left;
+        }
+        .expert__about {
+            font-size: 10px;
+            color: #999999;
+            line-height: 1.2;
+        }
+
+    }
+
+}

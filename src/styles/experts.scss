@@ -1,0 +1,36 @@
+.experts__wrapper {
+    width: 100%;
+}
+
+.experts {
+    .expert {
+        overflow: hidden;
+        flex: 1; // Добавить это
+        display: flex;
+    }
+    .expert__avatar {
+        flex-shrink: 0;
+        overflow: hidden;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $bluecolor;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .expert__info {
+        display: flex;
+        flex-direction: column;
+    }
+    .expert__avatar + .expert__info {
+        margin-left: 10px;
+    }
+    .slick-prev {
+        margin-right: 45px;
+    }
+    .slick-next{
+        margin-left: 45px;
+    }
+}

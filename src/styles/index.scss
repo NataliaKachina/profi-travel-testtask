@@ -1,13 +1,32 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-font-family: "slick" !default;
+$slick-arrow-color: black !default;
+$slick-loader-path: "~slick-carousel/slick/";
+@import "~slick-carousel/slick/slick.scss";
+@import "./slick-theme.scss";
+
+$graytext: #b0aaa7;
+$bluecolor: rgb(51, 153, 255);
+$lightgraycolor: rgb(240, 240, 240);
+
+@import "animations";
+@import "header";
+@import "footer";
+@import "experts";
+@import "action_button";
+@import "event_section";
+@import "main_content";
+
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
     background-color: #202020;
-}
-header {
-    height: 40px;
-}
-#main {
-    background-image: url("../src/assets/Layer675.png");
-    width: 100%;
 }

@@ -1,0 +1,47 @@
+#main-content {
+    background-image: url('../assets/Layer 675.png');
+    width: 100%;
+    .container {
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0;
+        padding-left: 15px;
+        padding-top: 35px;
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #program-of-events {
+        background-color: #ffffff;
+        header {
+            height: 60px;
+            margin-top: 60px;
+            padding-top: 15px;
+            padding-left: 30px;
+            background-color: $bluecolor;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+        @media (min-width: 720px) {
+            header {
+                padding-top: 10px;
+                font-size: 28px;
+            }
+        }
+        hr {
+            background-color: rgb(230, 230, 230);
+            height: 5px;
+            border-width: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #main-content {
+        padding-bottom: 50px;
+    }
+}
